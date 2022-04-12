@@ -15,11 +15,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
-
+const seatRouter = require('./routers/seat');
 // Add your router below
 
-
-
+app.use('/seat', seatRouter)
 
 
 
